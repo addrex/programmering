@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<!-- For å kunne åpne hamburgermenyen-->
+    <script>
+        function showSidebar() {
+        const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'flex'
+    
+        
+    }
+    
+    function hideSidebar() {
+         const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'none'
+    }
+    
+    </script>
+    
+    <header>
+<!--Navbar med navigering, + en hamburgermeny som kommer opp på mobil -->
+    <nav class="navbar">
+        <a href="index.html" class="navItem">
+            <img src="https://i.ibb.co/bySPvFS/Daler-logo-white.png" alt="logo" id="logoBilde">
+        </a>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./fagsider/aboutme.html"><p>Om meg</p></a>
+        </div>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./fagsider/node.html"><p>Node.js</p></a>
+        </div>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./fagsider/http.html"><p>HTTP+HTTPS</p></a>
+        </div>
+        
+        <div class="navItem" id="hideOnMobile">
+            <a href="./fagsider/vite.html"><p>Vite</p></a>
+        </div>
+        <div class="navItem" onclick="showSidebar()" >
+            <img src="https://www.clipartmax.com/png/full/77-773806_call-610-465-white-hamburger-menu-icon-png.png" alt="">
+        </div>
+
+    </nav>
+    </header>
+
+<ul class="sidebar">
+    <li onclick=hideSidebar() class="sidebarItem"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#5f6368" class="closeButton"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+    <li class="sidebarItem"><a href="fagsider/aboutme.html">Om meg</a></li>
+    <li class="sidebarItem"><a href="fagsider/node.html">Node.js</a></li>
+    <li class="sidebarItem"><a href="fagsider/http.html">HTTP+HTTPS</a></li>
+    <li class="sidebarItem"><a href="index.html">Hjem</a></li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+<article>
+    <div class="pageContent">
+        <div class="gridElement" id="imageContainer">
+            <div><img src="https://cms-assets.themuse.com/media/lead/01212022-1047259374-coding-classes_scanrail.jpg" alt="variabler"></div>
+        </div>
+        <div class="gridElement" id="contentInfo">
+            <div>
+                <h1>Grunnleggende programmering</h1>
+                <p>På denne siden vil du finne informasjon om ulike konsepter innenfor programmering. Mitt navn er Leo Daler, og jeg har laget denne siden med HTML og CSS. Du vil også finne informasjon om meg, samt om HTTP/HTTPS, NodeJS og Vite.</p>
+            </div>        
+        </div>
+    </div>
+</article>
+
+
+<div class="contentGrid">
+
+    <a href="./fagsider/variabler.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://codesweetly.com/_astro/javascript-variable-anatomy-codesweetly.D8EsFj2F_1fprq7.webp" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Variabler</h1>
+            <p>Variabler er det mest grunnleggende konseptet i programmering. Variabler er egentlig bare data, lagret sånn at vi kan bruke det flere ganger. Vi kan lagre...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/datatyper.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250726112918113495/data_types_in_javascript.webp" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Datatyper</h1>
+            <p>Det er 8 datatyper i JavaScript. De er: string, number, bigint, boolean, null, symbol og object. Det er ikke mulig å sette sammen...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/kontrollflyt.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://dotnettutorials.net/wp-content/uploads/2020/08/If-Statement-Control-Flow-in-Java.png" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Kontrollflyt</h1>
+            <p>Kontrollflyt er rekkefølgen koden din blir kjørt i. Til vanlig kjøres koden linje for linje fra toppen til bunnen. Men med kontrollflyt...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/løkker.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://miro.medium.com/0*urnSq8vQ0xujKwid.jpeg" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Løkker</h1>
+            <p>Løkker kan man bruke for å repetere kode flere ganger. Det vanligste er å bruke for-løkker. Med en for-løkke...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/funksjoner.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://www.circuitbasics.com/wp-content/uploads/2021/11/Arduino-Programming-11-Functions.png" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Funksjoner</h1>
+            <p>En funksjon er gentlig bare kode som vi kan bruke så mange ganger vi vil. Man kan skrive en funksjon, og så kan...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/arrays.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://cdn-media-1.freecodecamp.org/images/w3CWlvnWqG5VEy6qupnAYvTqECGhPdj3P9Wu" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Arrays</h1>
+            <p>Et array er en type variabel. Men isteden for å bare inneholde én verdi som de andre variabeltypene, kan et array ha mange...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/objekter.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://fireship.io/courses/javascript/img/js-object-props.png" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Objekter</h1>
+            <p>Et object i JavaScript er en type variabel. Men ulikt andre variabler som bare kan ha 1 verdi, har objects mange...</p>
+        </div>
+    </a>
+
+    <a href="./fagsider/arrowFunction.html" class="gridTile">
+        <div class="imageContainer">
+            <img src="https://echologyx.com/wp-content/uploads/2022/02/arrow-function.png" alt="variabler">
+        </div>
+        <div class="textContainer">
+            <h1>Arrow-functions</h1>
+            <p>Arrow functions er en kortere måte å skrive funksjoner i JavaScript. I stedet for å bruke function-nøkkelordet, kan vi skrive...</p>
+        </div>
+    </a>
+
+</div>
+
+
+
+<footer>
+<nav class="footer">
+    <div class="footerWrapper">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/leo_daler_/" class="linkWrapper"><img src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new--v2.png" alt="instagram" class="footerImg"></a>
+            <a href="https://www.tiktok.com/@leo.daler"><img src="https://static.vecteezy.com/system/resources/previews/018/930/483/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="tiktok" class="footImg"></a>
+            <a href="https://x.com/Addrex3"><img src="https://img.icons8.com/ios7/512/FFFFFF/twitterx--v2.png" alt="twitter" class="footImg"></a>
+        </div>
+
+        <div class="footerNav">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Back to top</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2025, Designed by Leo Daler</p>
+        </div>
+
+
+
+
+    </div>
+   
+
+</nav>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
