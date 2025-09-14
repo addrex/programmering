@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatyper</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- For å kunne åpne hamburgermenyen-->
+    <script>
+        function showSidebar() {
+        const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'flex'
+    
+        
+    }
+    
+    function hideSidebar() {
+         const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'none'
+    }
+    
+    </script>
+
+
+
+    
+    <header>
+<!--Navbar med navigering, + en hamburgermeny som kommer opp på mobil -->
+<!--Jeg har satt display:none på hideOnMobile slik at det skjules på mobil -->
+    <nav class="navbar">
+        <a href="../index.html" class="navItem">
+            <img src="https://i.ibb.co/bySPvFS/Daler-logo-white.png" alt="logo" id="logoBilde">
+        </a>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./aboutme.html"><p>Om meg</p></a>
+        </div>
+        <div class="navItem" id="hideOnMobile"> 
+            <a href="./node.html"><p>Node.js</p></a>
+        </div>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./http.html"><p>HTTP+HTTPS</p></a>
+        </div>
+        
+        <div class="navItem" id="hideOnMobile">
+            <a href="vite.html"><p>Vite</p></a>
+        </div>
+        <div class="navItem" onclick="showSidebar()" >
+            <img src="https://www.clipartmax.com/png/full/77-773806_call-610-465-white-hamburger-menu-icon-png.png" alt="">
+        </div>
+
+    </nav>
+    </header>
+
+    <!--Display har jeg satt til none på sidebar, men det endres når showSidebar() aktiveres -->
+
+<ul class="sidebar">
+    <li onclick=hideSidebar() class="sidebarItem"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#5f6368" class="closeButton"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+    <li class="sidebarItem"><a href="./aboutme.html">Om meg</a></li>
+    <li class="sidebarItem"><a href="./node.html">Node.js</a></li>
+    <li class="sidebarItem"><a href="./http.html">HTTP+HTTPS</a></li>
+    <li class="sidebarItem"><a href="./vite.html">Vite</a></li>
+
+</ul>
+
+    <article>
+    <div class="pageContent">
+        <div class="gridElement" id="imageContainer">
+            <div><img src="https://cdn.prod.website-files.com/6758716c1db67a29ec00ebb4/681da37499d136038dba27d1_image%2520(6).png" alt="arrow functions"></div>
+        </div>
+        <div class="gridElement" id="contentInfo">
+            <div>
+            <h1>Arrow Functions</h1>
+            <p>Arrow functions er en kortere måte å skrive funksjoner i JavaScript. I stedet for å bruke function-nøkkelordet, kan vi skrive koden mer kompakt med =>. For eksempel: 
+            const add = (a, b) => a + b; gjør akkurat det samme som 
+            function add(a, b) { return a + b; }.</p>
+            </div>        
+        </div>
+    </div>
+</article>
+
+<article>
+    <div class="pageContent" id="page2">
+        <div class="gridElement" id="imageContainer">
+            <div><img src="https://www.c-sharpcorner.com/article/iterating-over-an-array-using-arrow-functions-in-javascript/Images/map2.jpg" alt="arrow functions eksempel"></div>
+        </div>
+        <div class="gridElement" id="contentInfo">
+            <div>
+            <h1>Hvorfor bruke Arrow Functions?</h1>
+            <p>Arrow functions gjør koden enklere å lese, spesielt når man skriver korte funksjoner. De har også en spesiell oppførsel: de binder ikke sin egen this-verdi. Det betyr at arrow functions ofte er nyttige når man jobber med metoder inne i objekter eller callback-funksjoner.</p>
+            <p>Et praktisk eksempel kan være når vi jobber med arrays. Hvis vi vil lage en ny array med tallene ganget med 2, kan vi gjøre det slik:  
+            const numbers = [1, 2, 3, 4];  
+            const doubled = numbers.map(n => n * 2);  
+            Resultatet blir [2, 4, 6, 8].</p>
+            </div>        
+        </div>
+    </div>
+</article>
+
+
+<footer>
+    <nav class="footer">
+        <div class="footerWrapper">
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/leo_daler_/" class="linkWrapper"><img src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new--v2.png" alt="instagram" class="footerImg"></a>
+                <a href="https://www.tiktok.com/@leo.daler"><img src="https://static.vecteezy.com/system/resources/previews/018/930/483/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="tiktok" class="footImg"></a>
+                <a href="https://x.com/Addrex3"><img src="https://img.icons8.com/ios7/512/FFFFFF/twitterx--v2.png" alt="twitter" class="footImg"></a>
+            </div>
+
+            <div class="footerNav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Back to top</a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025, Designed by Leo Daler</p>
+            </div>
+        </div>   
+    </nav>
+</footer>

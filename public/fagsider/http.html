@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- For å kunne åpne hamburgermenyen-->
+    <script>
+        function showSidebar() {
+        const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'flex'
+    
+        
+    }
+    
+    function hideSidebar() {
+         const sideBar = document.querySelector('.sidebar')
+        sideBar.style.display = 'none'
+    }
+    
+    </script>
+    
+ <header>
+<!--Navbar med navigering, + en hamburgermeny som kommer opp på mobil -->
+<!--Jeg har satt display:none på hideOnMobile slik at det skjules på mobil -->
+    <nav class="navbar">
+        <a href="../index.html" class="navItem">
+            <img src="https://i.ibb.co/bySPvFS/Daler-logo-white.png" alt="logo" id="logoBilde">
+        </a>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./aboutme.html"><p>Om meg</p></a>
+        </div>
+        <div class="navItem" id="hideOnMobile"> 
+            <a href="./node.html"><p>Node.js</p></a>
+        </div>
+        <div class="navItem" id="hideOnMobile">
+            <a href="./http.html"><p>HTTP+HTTPS</p></a>
+        </div>
+        
+        <div class="navItem" id="hideOnMobile">
+            <a href="vite.html"><p>Vite</p></a>
+        </div>
+        <div class="navItem" onclick="showSidebar()" >
+            <img src="https://www.clipartmax.com/png/full/77-773806_call-610-465-white-hamburger-menu-icon-png.png" alt="">
+        </div>
+
+    </nav>
+    </header>
+
+    <!--Display har jeg satt til none på sidebar, men det endres når showSidebar() aktiveres -->
+
+<ul class="sidebar">
+    <li onclick=hideSidebar() class="sidebarItem"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#5f6368" class="closeButton"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+    <li class="sidebarItem"><a href="./aboutme.html">Om meg</a></li>
+    <li class="sidebarItem"><a href="./node.html">Node.js</a></li>
+    <li class="sidebarItem"><a href="./http.html">HTTP+HTTPS</a></li>
+    <li class="sidebarItem"><a href="./vite.html">Vite</a></li>
+
+</ul>
+
+<article>
+        <div class="pageContent">
+            <div class="gridElement" id="imageContainer">
+                <div><img src="https://study-ccna.com/wp-content/images/http_process_explained.jpg" alt="variabler"></div>
+            </div>
+            <div class="gridElement" id="contentInfo">
+            <div>
+                <h1>HTTP</h1>
+                <p>HTTP står for Hyper Text Transfer Protocol, og er reglene (protokollen) nettlesere og servere bruker for å kommunisere. Du skriver inn et nettsted, så sender nettleseren en HTTP-forespørsel til serveren som sender nettsiden tilbake. Men HTTP er ikke sikkert, og her kommer HTTPS inn.</p>
+            </div>        
+            </div>
+        </div>
+</article>
+
+<article>
+        <div class="pageContent" id="page2">
+            <div class="gridElement" id="imageContainer">
+                <div><img src="https://i.ibb.co/Zz3hc3j4/image.png" alt="variabler"></div>
+            </div>
+            <div class="gridElement" id="contentInfo">
+            <div>
+                <h1>HTTPS</h1>
+                <p>Forskjellen på HTTP og HTTPS, er at HTTPS er mye sikrere. HTTP er ikke kryptert, og man kan derfor se dataene som blir sendt. Men HTTPS derimot er kryptert, som gjør at man ikke kan se dataene som blir sendt over. Derfor bruker alle nye nettsider nå HTTPS.</p>
+            </div>        
+            </div>
+        </div>
+</article>
+
+
+<footer>
+    <nav class="footer">
+        <div class="footerWrapper">
+            <div class="socialIcons">
+                <a href="https://www.instagram.com/leo_daler_/" class="linkWrapper"><img src="https://img.icons8.com/m_outlined/512/FFFFFF/instagram-new--v2.png" alt="instagram" class="footerImg"></a>
+                <a href="https://www.tiktok.com/@leo.daler"><img src="https://static.vecteezy.com/system/resources/previews/018/930/483/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png" alt="tiktok" class="footImg"></a>
+                <a href="https://x.com/Addrex3"><img src="https://img.icons8.com/ios7/512/FFFFFF/twitterx--v2.png" alt="twitter" class="footImg"></a>
+            </div>
+
+            <div class="footerNav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">Back to top</a>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025, Designed by Leo Daler</p>
+            </div>
+        </div>   
+    </nav>
+</footer>
+
